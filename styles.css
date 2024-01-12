@@ -407,6 +407,18 @@ nav {
   max-height: 280px;
 }
 
+.card-2{
+  flex-direction: opposite;
+}
+
+#id-2{
+  display: flex;
+}
+
+#id-1{
+  display: none;
+}
+
 .form__container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* background-color: #ffcccc;  */
@@ -610,6 +622,14 @@ button:active {
     background-color: var(--white);
     border-radius: 5rem;
     cursor: pointer;
+  }
+
+  #id-1{
+    display: flex;
+  }
+  
+  #id-2{
+    display: none;
   }
 
   .header__content h4 {
