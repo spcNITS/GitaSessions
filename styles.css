@@ -394,29 +394,24 @@ nav {
 
 .reviews_container{
   max-width: var(--max-width);
+  font-size: small;
 }
 
 .reviews{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
+  margin: 24px;
 }
 
 .reviews img{
   max-width: 250px;
   max-height: 280px;
+  padding: 24px;
 }
 
 .card-2{
   flex-direction: opposite;
-}
-
-#id-2{
-  display: flex;
-}
-
-#id-1{
-  display: none;
 }
 
 .form__container {
@@ -624,14 +619,6 @@ button:active {
     cursor: pointer;
   }
 
-  #id-1{
-    display: flex;
-  }
-  
-  #id-2{
-    display: none;
-  }
-
   .header__content h4 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
@@ -643,11 +630,34 @@ button:active {
     font-size: 0.8rem;
     color: var(--white);
   }
+
+  .reviews{
+    /* background-color: var(--primary-color); */
+    border: 1px solid white;
+    border-radius: 1rem;
+  }
+
+  /* .reviews p{
+    color: var(--white);
+  } */
+
+  .reviews img{
+    /* padding: 15px; */
+    /* margin: 4px; */
+    max-width: 100px;
+    max-height: 100px;
+    /* border: 1px solid var(--primary-color); */
+    border-radius: 5rem;
+  }
 }
 
 @media (width > 540px) {
   .nav__logo {
     max-width: 120px;
+  }
+
+  .reviews_container{
+    font-size: medium;
   }
 
   .shopping__grid {
@@ -685,10 +695,10 @@ button:active {
     text-align: left;
   }
 
-  .reviews{
+   /* .reviews{
     flex-direction: row;
     margin: 20px;
-  }
+  } */
 
   .coupon__container {
     grid-template-columns: 1.5fr 1fr;
@@ -707,5 +717,12 @@ button:active {
 
   .footer__socials {
     justify-content: flex-end;
+  }
+}
+
+@media screen {
+  .reviews_container{
+    display: flex;
+    flex-direction: column;
   }
 }
