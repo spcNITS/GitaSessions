@@ -32,6 +32,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-dark);
+  text-align: center;
 }
 
 .section__header span {
@@ -635,11 +636,13 @@ button:active {
     /* background-color: var(--primary-color); */
     border: 1px solid white;
     border-radius: 1rem;
+    margin: 0px;
   }
 
-  /* .reviews p{
-    color: var(--white);
-  } */
+  .reviews p{
+    /* color: var(--white); */
+    font-size: medium;
+  }
 
   .reviews img{
     /* padding: 15px; */
@@ -723,6 +726,122 @@ button:active {
 @media screen {
   .reviews_container{
     display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/* prince */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+.container{
+
+	display: grid;
+	justify-content: center;
+	align-content: center;
+  padding: 10px;
+	
+	.testimonial-box{
+		position: relative;
+		width: auto;
+	
+		
+	
+		
+		
+		.testimonial{
+			display: grid;
+			grid-template-rows: 1.3fr 0.7fr;
+			box-shadow: 0 0 5px rgba(0,0,0,.5);
+			width: 100%;
+			height: 100%;
+      background: radial-gradient(circle, rgba(250,250,245,1) 100%, rgba(148,187,233,1) 100%);
+    
+			padding: 10px 20px;
+			position: relative;
+			
+			.fas{
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 10px;
+				font-size: 25px;
+				color: #222;
+			}
+			
+			.testimonial-text{
+				font-size: 16px;
+				line-height: 25px;
+				text-align: center;
+				padding: 25px 15px;
+				width: 100%;
+			}
+			
+			.testimonial-user{
+				display: flex;
+				align-items: center;
+				
+				.user-img{
+					box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+				}
+				
+				.user-info{
+					margin: 0 20px;
+					display: grid;
+					grid-template-rows: 1fr 1fr;
+					
+					.user-name{
+						font-weight: 800;
+					}
+					
+					.user-job-details{
+						margin: 5px 0 0 0;
+						position: relative;
+						display: flex;
+						justify-content: space-between;
+						
+						.line{
+							position: absolute;
+							width: 2px;
+							height: 100%;
+							background: #000;
+							left: 50%;
+							top: 0;
+							transform: translateX(-50%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.review-box
+{ 
+  padding: 50px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center;
+  
+}
+
+@media (width<720px)
+{
+  .review-box{
     flex-direction: column;
   }
 }
